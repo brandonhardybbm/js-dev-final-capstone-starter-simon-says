@@ -48,9 +48,9 @@ h1 {
 }
 
 .start-button:hover {
-  color: greenyellow;
+  color: limegreen;
   font-size: 18px;
-  border-color: greenyellow;
+  border-color: limegreen;
   transform: rotate(5deg);
 }
 
