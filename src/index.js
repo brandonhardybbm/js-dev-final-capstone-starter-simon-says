@@ -86,9 +86,13 @@ padContainer.addEventListener("click", padHandler);
  */
 function startButtonHandler() {
   // TODO: Write your code here.
+  let numberOfRoundsToWin = 8;
 
-  return { startButton, statusSpan };
+  updateGameInterface;
+
+  playComputerTurn(numberOfRoundsToWin);
 }
+  return { startButton, statusSpan };
 
 /**
  * Called when one of the pads is clicked.
