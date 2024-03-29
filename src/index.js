@@ -41,19 +41,19 @@ let roundCount = 0; // track the number of rounds that have been played so far
   {
     color: "blue",
     selector: document.querySelector(".js-pad-blue"),
-    sound: new Audio("../assets/simon-says-sound-1.mp3"),
+    sound: new Audio("../assets/simon-says-sound-2.mp3"),
   },
 
   {
     color: "yellow",
     selector: document.querySelector(".js-pad-yellow"),
-    sound: new Audio("../assets/simon-says-sound-1.mp3"),
+    sound: new Audio("../assets/simon-says-sound-3.mp3"),
   },
 
   {
     color: "green",
     selector: document.querySelector(".js-pad-green"),
-    sound: new Audio("../assets/simon-says-sound-1.mp3"),
+    sound: new Audio("../assets/simon-says-sound-4.mp3"),
   },
 
 ];
