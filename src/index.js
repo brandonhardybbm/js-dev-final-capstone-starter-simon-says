@@ -73,6 +73,7 @@ padContainer.addEventListener("click", padHandler);
  * Called when the start button is clicked.
  *
  * 1. Call setLevel() to set the level of the game
+ * 
  *
  * 2. Increment the roundCount from 0 to 1
  *
@@ -141,6 +142,7 @@ function padHandler(event) {
  */
 function setLevel(level = 1) {
   // TODO: Write your code here.
+  return level;
 }
 
 /**
