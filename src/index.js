@@ -185,6 +185,7 @@ function getRandomItem(collection) {
  */
 function setText(element, text) {
   // TODO: Write your code here.
+  element.innerText = text;
   return element;
 }
 
