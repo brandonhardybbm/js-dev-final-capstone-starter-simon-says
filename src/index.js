@@ -204,6 +204,11 @@ function setText(element, text) {
 
 function activatePad(color) {
   // TODO: Write your code here.
+  let pads = pads.find((pad) => pad.color == color);
+  pad.selector.classList.add("activated");
+  pad.sound.currentTime = 0;
+  pad.sound.play();
+  setTimeout(() => { pad.selector.classList.remove("activated")}, 500);
 }
 
 /**
