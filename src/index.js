@@ -41,19 +41,19 @@ let roundCount = 0; // track the number of rounds that have been played so far
   {
     color: "blue",
     selector: document.querySelector(".js-pad-blue"),
-    sound: new Audio("../assets/simon-says-sound-2.mp3"),
+    sound: new Audio("../assets/simon-says-sound-3.mp3"),
   },
 
   {
     color: "yellow",
     selector: document.querySelector(".js-pad-yellow"),
-    sound: new Audio("../assets/simon-says-sound-3.mp3"),
+    sound: new Audio("../assets/simon-says-sound-4.mp3"),
   },
 
   {
     color: "green",
     selector: document.querySelector(".js-pad-green"),
-    sound: new Audio("../assets/simon-says-sound-4.mp3"),
+    sound: new Audio("../assets/simon-says-sound-2.mp3"),
   },
 
 ];
@@ -86,11 +86,11 @@ startButton.addEventListener("click", startButtonHandler);
  */
 function startButtonHandler() {
   // TODO: Write your code here.
-  let numberOfRoundsToWin = 8;
-
-  updateGameInterface;
-
-  playComputerTurn(numberOfRoundsToWin);
+  setLevel();
+  roundCount ++;
+  startButton.classList.add("hidden");
+  statusSpan.classList.remove("hidden");
+  playComputerTurn();
 }
   return { startButton, statusSpan };
 
