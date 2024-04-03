@@ -227,6 +227,11 @@ function activatePad(color) {
 
 function activatePads(sequence) {
   // TODO: Write your code here.
+  let delay = 600;
+  sequence.forEach(color => {
+    setTimeout(() => activatePad(color), delay);
+    delay += 600;
+  })
 }
 
 /**
