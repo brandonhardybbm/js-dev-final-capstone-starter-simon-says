@@ -279,6 +279,8 @@ function activatePads(sequence) {
  */
 function playHumanTurn() {
   // TODO: Write your code here.
+  padContainer.classList.remove('unclickable');
+  statusSpan.textContent = `Player's Turn: there are ${computerSequence.length - playerSequence.length} moves left in the round.`;
 }
 
 /**
