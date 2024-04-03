@@ -114,8 +114,11 @@ function startButtonHandler() {
 function padHandler(event) {
   const { color } = event.target.dataset;
   if (!color) return;
-
-  // TODO: Write your code here.
+ // TODO: Write your code here.
+  let pad = pads.find(pad => pad.color == color);
+  pad.sound.currentTime = 0;
+  pad.sound.play();
+  checkPress(color);
   return color;
 }
 
