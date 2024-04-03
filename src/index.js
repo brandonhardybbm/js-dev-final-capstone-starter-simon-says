@@ -310,6 +310,19 @@ function playHumanTurn() {
  */
 function checkPress(color) {
   // TODO: Write your code here.
+  playerSequence.push(color);
+  let index = playerSequence.length - 1;
+  let remainingPresses = computerSequence.length - playerSequence.length;
+  if (remainingPresses == 1) {
+    setText(statusSpan, `1 press remaining`);
+  } else {
+    setText(statusSpan, `${remainingPresses} presses remaining`)
+  }
+  if (playerSequence[index] != computerSequence[index]) {
+    resetGame("Incorrect sequence!");
+  } else {
+    if (remainingPresses == 0) checkRound();
+  }
 }
 
 /**
