@@ -342,6 +342,13 @@ function checkPress(color) {
 
 function checkRound() {
   // TODO: Write your code here.
+  if (playerSequence.length == maxRoundCount) {
+    resetGame("You won! Woo!");
+  } else {
+    roundCount++;
+    setText(statusSpan, "Nice! Keep it going!");
+    setTimeout(playComputerTurn, 1000);
+  }
 }
 
 /**
