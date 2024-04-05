@@ -13,7 +13,7 @@ const allPads = document.querySelectorAll('.pad');
 */
 let computerSequence = []; // track the computer-generated sequence of pad presses
 let playerSequence = []; // track the player-generated sequence of pad presses
-let maxRoundCount = 0; // the max number of rounds, varies with the chosen level
+let maxRoundCount = 8; // the max number of rounds, varies with the chosen level
 let roundCount = 0; // track the number of rounds that have been played so far
 let currentDifficulty = 1;
 
